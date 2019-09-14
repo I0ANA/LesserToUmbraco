@@ -1,0 +1,48 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    var imageNodeId = Umbraco.AssignedContentItem.GetPropertyValue<string>("fixedImage");
+    //var imageMedia = Umbraco.Media(imageNodeId);
+    var imageMedia = Umbraco.TypedMedia(imageNodeId);
+
+    var imageUrl = imageMedia.Url;
+
+
+    /*Add dynamic alt text for the image - this is a custom property that we need to add on the Media Type - Image documents*/
+    var altImage = "";
+    if (Umbraco.TypedMedia(1103).HasProperty("altImage"))
+    {
+        altImage = imageMedia.GetPropertyValue<string>("altImage");
+    }
+}
+
+
+@*@Model.Properties.Where( p => p.PropertyTypeAlias == "altImage");
+@Model.GetPropertyValue<string>("altImage")*@
+@*@Model.AltImage*@
+
+
+@*@Umbraco.Field("altImage")
+@Umbraco.Field("altImage", recursive: true)
+@imageMedia.GetValue("altImage");*@
+    <h1>
+        @*@Umbraco.Content(imageNodeId).PropertyAlias
+        @Umbraco.Media(imageNodeId).PropertyAlias*@
+        
+        @Umbraco.TypedMedia(imageNodeId).GetPropertyValue("altImage")
+    </h1>
+
+@*@Model.Content*@
+
+<section>
+        @* How to use the built-in image cropper in Umbraco *@
+        <div>
+            <img src="@imageMedia.GetCropUrl("header")" alt="@altImage" />
+        </div>
+    </section>
+
+    @*<section>
+            @Umbraco.Content(imageNodeId).Url
+            @Umbraco.TypedContent(imageNodeId).Url
+            @Umbraco.NiceUrl(int.Parse(imageNodeId))
+        </section>*@

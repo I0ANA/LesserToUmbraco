@@ -1,0 +1,47 @@
+﻿@using Newtonsoft.Json.Linq
+@inherits UmbracoTemplatePage
+
+@{
+    string backgroundImageUrl = "";
+    if (Umbraco.AssignedContentItem.HasProperty("fixedImage"))
+    {
+        /*Keep in mind this just retireves the id associated with the image - Step 1*/
+        string backgroundImageNodeId = Umbraco.AssignedContentItem.GetPropertyValue<string>("fixedImage");
+
+        /*To be able to work with the image, eg GetCropUrl or get the .Url we need to retrieve the Umbraco Media object */
+        backgroundImageUrl = Umbraco.Media(backgroundImageNodeId).Url + "?brightness=-30";
+    }
+
+    JToken relatedLinks = Umbraco.AssignedContentItem.GetPropertyValue<JArray>("fixedImageBlockLink").FirstOrDefault();
+
+}
+
+<section class="wrapper style3 special" style="background-image: url(@backgroundImageUrl)">
+    <div class="inner">
+        <header>
+            <h2>@Umbraco.Field("fixedImageTextTitle")</h2>
+            <p>@Umbraco.Field("fixedImageText")</p>
+        </header>
+
+        @*//Get just the first link from the related links property*@
+        <footer>
+            <ul class="actions">
+                <li><a href="@(relatedLinks["link"].Value<string>())" class="button big" target="@relatedLinks["newWindow"]">@(relatedLinks["caption"].Value<string>())</a></li>
+            </ul>
+        </footer>
+
+        @* Get all the URLs link in the related links property *@
+        <footer>
+            <ul>
+                @foreach (var relatedLink in Umbraco.AssignedContentItem.GetPropertyValue<JArray>("fixedImageBlockLink"))
+                {
+                    <li>
+                        <a href="@(relatedLink["link"].Value<string>())" class="button big" target="@(relatedLink["newWindow"].ToString() == "True" ? "_blank" : null)">
+                            @(relatedLink["caption"].Value<string>())
+                        </a>
+                    </li>
+                }
+            </ul>
+        </footer>
+    </div>
+</section>

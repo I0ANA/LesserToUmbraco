@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using Newtonsoft.Json.Linq
+@using Umbraco.Web.Models
+
+@{
+    Layout = null;
+
+    var relatedLinks = Umbraco.AssignedContentItem.GetPropertyValue<JArray>("linkTarget").FirstOrDefault();
+
+    string link = "";
+    if (relatedLinks != null)
+    {
+        link = relatedLinks["link"].Value<string>();
+    }
+
+    //foreach (var link in relatedLinks.FirstOrDefault())
+    //{
+    //    var test = link["link"].Value<string>();
+
+    //}
+
+    //relatedLinks["link"];
+    if (!string.IsNullOrEmpty(link))
+    {
+        //Response.Redirect(link);
+        Response.RedirectPermanent(link);
+    }
+
+}
+
+@Umbraco.Field("linkTarget")

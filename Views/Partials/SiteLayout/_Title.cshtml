@@ -1,0 +1,20 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    var title = Umbraco.AssignedContentItem.Name;
+
+    if (Umbraco.AssignedContentItem.HasProperty("title")
+        && Umbraco.AssignedContentItem.GetPropertyValue("title") != null
+        && !string.IsNullOrEmpty(Umbraco.AssignedContentItem.GetPropertyValue<string>("title")))
+    {
+        title = Umbraco.AssignedContentItem.GetPropertyValue<string>("title");
+    }
+
+    var subTitle = Umbraco.AssignedContentItem.GetPropertyValue("subTitle");
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2>@title</h2>
+        @Html.Raw(subTitle)
+    </div>
+</div>

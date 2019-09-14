@@ -1,0 +1,47 @@
+﻿@inherits UmbracoViewPage<ContactViewModel>
+
+@using LesserToUmbraco.Models;
+
+@using (Ajax.BeginForm("SubmitForm", "Contact", new AjaxOptions()
+{
+    UpdateTargetId = "form-result",
+    HttpMethod = "POST",
+    InsertionMode = InsertionMode.Replace,
+    OnSuccess = "contactForm.showResult",
+    OnFailure = "contactForm.showResult"
+}, new { id = "contact-form" }))
+{
+    <div id="form-outer" class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @*<input class="form-control" placeholder="Name" type="text">*@
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" })
+                    @Html.ValidationMessageFor(m => m.Name)
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @*<input class="form-control" placeholder="Email" type="text">*@
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                @*<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>*@
+                @Html.TextAreaFor(m => m.Message, new {@class = "form-control", placeholder = "Message"})
+                @Html.ValidationMessageFor(m => m.Message)
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input id="contact-submit" value="Send Message" class="btn btn-primary" type="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form-result"></div>
+}
+

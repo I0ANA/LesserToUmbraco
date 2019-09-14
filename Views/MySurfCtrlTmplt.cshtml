@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web
+@using LesserToUmbraco.Controllers;
+
+@{
+	Layout = "WebBase.cshtml";
+}
+<style type="text/css">
+    form {
+        width: 350px;
+        margin: 3em auto;
+    }
+
+    form fieldset {
+        padding-bottom: 10px;
+    }
+
+    form div {
+        padding-bottom: 5px;
+    }
+
+    form label {
+        width: 150px;
+        display: inline-block;
+    }
+
+    form button {
+        float: right;
+        display: inline-block;
+    }
+
+</style>
+
+@using (Html.BeginUmbracoForm<MySurfaceController>("Index"))
+{
+    <fieldset>
+        <div>
+            @Html.Label("Name", "Name:")
+            @Html.TextBox("Name")
+        </div>
+        <div>
+            @Html.Label("Email", "Email")
+            @Html.TextBox("Email")
+        </div>
+        <div>
+            @Html.Label("Message", "Message")
+            @Html.TextBox("Message")
+        </div>
+    </fieldset>
+    <fieldset>
+        <button type="reset">Clear</button>
+        <button type="submit">Send</button>
+    </fieldset>
+}
+
+
+@* Here I call my Plugin Surface Controller 
+    It looks at the folder structure under App_Plugins to get the view
+    it know it is a plugin controller because of the new {area = "UmbracoWithMvcPlugins"} parameter
+    which is the attribute used in the Surface Controller  [PluginController("UmbracoWithMvcPlugins")]   
+    
+    I am returning PartialView from the MyPluginSurface Controller so I can render it through @Html.Action*@
+@Html.Action("Index", "MyPluginSurface", new {area = "UmbracoWithMvcPlugins"})

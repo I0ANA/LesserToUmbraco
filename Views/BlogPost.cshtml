@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "WebBase.cshtml";
+}
+
+    <div id="fh5co-about-section">
+        <div class="container about-inner">
+            @{ Html.RenderAction("RenderTitleSection", "SiteLayout"); }
+            @CurrentPage.GetGridHtml("contentGrid", "Bootstrap3")
+        </div>
+	</div>

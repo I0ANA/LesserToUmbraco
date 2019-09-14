@@ -1,0 +1,16 @@
+﻿@model LesserToUmbraco.Models.LatestBlogPost
+
+<div id="fh5co-blog-section" class="fh5co-grey-bg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                <h2>@Model.Title</h2>
+                @Html.Raw(Model.Introduction)
+            </div>
+        </div>
+        <div class="row">
+            @{Html.RenderAction("RenderPostList", "Blog", new {numberOfBlogs = 3} );}
+        </div>
+    </div>
+</div>
+

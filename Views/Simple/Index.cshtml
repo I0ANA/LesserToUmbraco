@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using LesserToUmbraco.Controllers;
+
+@{
+   // Layout = "~/Views/WebBase.cshtml";
+}
+
+<h2>Index</h2>
+<body>
+    <div>
+        Hello world
+
+        <div>
+            CurrentPage:  @CurrentPage.ToString()
+        </div>
+        <p>
+            @ViewBag.Intro Intro
+            @ViewBag.Id ID
+            @ViewBag.HomePageDocType = documentType;
+        </p>
+    </div>
+</body>

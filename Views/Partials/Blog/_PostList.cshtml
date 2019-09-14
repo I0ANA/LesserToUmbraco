@@ -1,0 +1,23 @@
+﻿@using LesserToUmbraco.Models
+@model List<BlogPreview>
+
+<div class="row">
+    @foreach (BlogPreview article in Model)
+    {
+        @RenderBlogPreview(article)
+    }
+</div>
+
+@helper RenderBlogPreview(BlogPreview item)
+{
+<div class="col-md-4 text-center">
+    <div class="blog-inner">
+        <a href="@item.LinkUrl"><img class="img-responsive" src="@item.ImageUrl" alt="@item.Name"></a>
+        <div class="desc">
+            <h3><a href="@item.LinkUrl">@item.Name</a></h3>
+            <p>@item.Introduction</p>
+            <p><a href="@item.LinkUrl" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>
+        </div>
+    </div>
+</div>
+}

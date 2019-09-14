@@ -1,0 +1,51 @@
+﻿ 2019-08-14 09:16:06,453 [P14232/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on DESKTOP-JROVV3R
+ 2019-08-14 09:16:06,504 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-08-14 09:16:06,656 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 152ms)
+ 2019-08-14 09:16:06,755 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2019-08-14 09:16:06,996 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 240ms)
+ 2019-08-14 09:16:07,064 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-08-14 09:16:07,065 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2019-08-14 09:16:07,065 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-08-14 09:16:07,066 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2019-08-14 09:16:07,084 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2019-08-14 09:16:07,109 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 24ms)
+ 2019-08-14 09:16:07,109 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2019-08-14 09:16:07,117 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 7ms)
+ 2019-08-14 09:16:07,270 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2019-08-14 09:16:07,271 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2019-08-14 09:16:07,271 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2019-08-14 09:16:07,272 [P14232/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2019-08-14 09:16:09,385 [P14232/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-08-14 09:16:09,946 [P14232/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-08-14 09:16:10,074 [P14232/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-08-14 09:16:10,183 [P14232/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-08-14 09:16:10,461 [P14232/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-08-14 09:16:10,461 [P14232/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-08-14 09:16:10,482 [P14232/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4156ms)
+ 2019-08-14 09:16:11,842 [P14232/D2/T12] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://lesser.to.umbraco:80/umbraco (UmbracoModule request)
+ 2019-08-14 09:16:11,843 [P14232/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://lesser.to.umbraco:80/umbraco (UmbracoModule request)
+ 2019-08-14 09:16:15,514 [P14232/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2019-08-14 09:16:15,529 [P14232/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2019-08-14 09:16:16,896 [P14232/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-08-14 09:16:16,898 [P14232/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2019-08-14 09:16:17,061 [P14232/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-08-14 09:16:17,062 [P14232/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2019-08-14 09:16:18,762 [P14232/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type LesserToUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-08-14 09:17:15,658 [P14232/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-13 09:17:15
+ 2019-08-14 13:17:15,801 [P14232/D2/T221] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-13 13:17:15
+ 2019-08-14 17:17:15,957 [P14232/D2/T123] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-13 17:17:15
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-08-14 19:09:00,724 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-08-14 19:09:00,739 [P14232/D2/T112] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-08-14 19:09:00,739 [P14232/D2/T309] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-08-14 19:09:00,739 [P14232/D2/T128] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-08-14 19:09:00,739 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-08-14 19:09:00,739 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-08-14 19:09:00,739 [P14232/D2/T67] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-08-14 19:09:00,802 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-08-14 19:09:00,802 [P14232/D2/T385] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-08-14 19:09:00,802 [P14232/D2/T329] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated

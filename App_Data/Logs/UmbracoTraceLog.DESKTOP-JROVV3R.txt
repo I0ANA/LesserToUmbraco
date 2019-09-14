@@ -1,0 +1,44 @@
+﻿ 2019-08-31 00:39:02,912 [P10816/D25/T430] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-30 00:39:02
+ 2019-08-31 04:39:03,116 [P10816/D25/T439] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-30 04:39:03
+ 2019-08-31 08:39:03,210 [P10816/D25/T370] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-30 08:39:03
+ 2019-08-31 12:39:03,374 [P10816/D25/T370] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-30 12:39:03
+ 2019-08-31 13:52:08,941 [P10816/D25/T339] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type LesserToUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-08-31 13:52:27,652 [P10816/D25/T181] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username motivation from IP address 127.0.0.1
+ 2019-08-31 13:52:27,653 [P10816/D25/T181] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: motivation logged in from IP address 127.0.0.1
+ 2019-08-31 13:52:27,789 [P10816/D25/T316] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2019-08-31 13:52:27,804 [P10816/D25/T316] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 15ms)
+ 2019-08-31 13:52:27,868 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2019-08-31 13:52:27,887 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 18ms)
+ 2019-08-31 13:52:27,887 [P10816/D25/T353] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2019-08-31 13:52:27,903 [P10816/D25/T353] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 16ms)
+ 2019-08-31 13:52:27,914 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2019-08-31 13:52:27,914 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2019-08-31 13:52:27,916 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2019-08-31 13:52:27,930 [P10816/D25/T203] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 14ms)
+ 2019-08-31 14:12:01,159 [P10816/D25/T342] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: motivation, IP Address: 127.0.0.1
+ 2019-08-31 16:39:03,517 [P10816/D25/T47] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-08-30 16:39:03
+ 2019-08-31 17:00:06,280 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-08-31 17:00:06,280 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-08-31 17:00:06,280 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-08-31 17:00:06,280 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-08-31 17:00:06,281 [P10816/D25/T203] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-08-31 17:00:06,282 [P10816/D25/T74] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-08-31 17:00:06,366 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-08-31 17:00:06,366 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-08-31 17:00:06,367 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-08-31 17:00:06,367 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-08-31 17:00:06,367 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-08-31 17:00:06,367 [P10816/D25/T353] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-08-31 17:00:06,367 [P10816/D25/T188] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-08-31 17:00:06,367 [P10816/D25/T370] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-08-31 17:00:06,367 [P10816/D25/T311] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-08-31 17:00:36,448 [P10816/D25/T370] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()
